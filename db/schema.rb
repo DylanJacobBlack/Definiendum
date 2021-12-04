@@ -10,10 +10,49 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_12_04_113921) do
+ActiveRecord::Schema.define(version: 2021_12_04_122043) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "appointed_languages", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.bigint "language_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["language_id"], name: "index_appointed_languages_on_language_id"
+    t.index ["user_id"], name: "index_appointed_languages_on_user_id"
+  end
+
+  create_table "definitions", force: :cascade do |t|
+    t.string "word"
+    t.bigint "language_id", null: false
+    t.bigint "user_id", null: false
+    t.string "definition"
+    t.integer "level"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["language_id"], name: "index_definitions_on_language_id"
+    t.index ["user_id"], name: "index_definitions_on_user_id"
+  end
+
+  create_table "languages", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "lessons", force: :cascade do |t|
+    t.string "title"
+    t.integer "difficulty_level"
+    t.string "text"
+    t.bigint "user_id", null: false
+    t.bigint "language_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["language_id"], name: "index_lessons_on_language_id"
+    t.index ["user_id"], name: "index_lessons_on_user_id"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -27,4 +66,10 @@ ActiveRecord::Schema.define(version: 2021_12_04_113921) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "appointed_languages", "languages"
+  add_foreign_key "appointed_languages", "users"
+  add_foreign_key "definitions", "languages"
+  add_foreign_key "definitions", "users"
+  add_foreign_key "lessons", "languages"
+  add_foreign_key "lessons", "users"
 end
