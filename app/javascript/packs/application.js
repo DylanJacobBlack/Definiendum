@@ -19,7 +19,7 @@ ActiveStorage.start()
 // ----------------------------------------------------
 
 // External imports
-import "bootstrap";
+import "../application.css"
 
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
