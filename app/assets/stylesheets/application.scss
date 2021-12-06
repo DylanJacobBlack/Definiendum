@@ -11,3 +11,46 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+
+* {
+  font-family: 'Righteous', sans-serif;
+}
+
+.text-primary-color {
+  color: #1a2639;
+}
+
+.logo-text {
+  font-family: 'Righteous', sans-serif;
+}
+
+
+.card-project {
+  height: 275px;
+  min-width: 100px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 85%;
+}
+
+.title{
+  min-height: 65px;
+  max-height: 65px;
+}
+
+.title p {
+  max-lines: 2;
+  line-clamp: 2;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
