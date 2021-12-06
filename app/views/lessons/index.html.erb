@@ -1,5 +1,178 @@
-<>
-<div class="max-w-lg mx-auto mt-16 text-center max-w-sm rounded overflow-hidden shadow-lg p-10">
-  <h1 class="mb-4 text-3xl font-black">Here are all our users!</h1>
-  <p class="text-lg leading-snug">If this looks nice, it means Tailwind is set up properly.</p>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div class='flex justify-center'>
+  <div class="max-w-screen-xl mx-auto p-8 grid gap-8 grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3">
+    <% Lesson.all.each do |lesson| %>
+      <div id="container">
+        <div class="product-details">
+          <div class="text-md mb-2 font-bold underline"><%= lesson.title %></div>
+            <ul>
+              <li>Name of Course</li>
+              <li><%= lesson.difficulty_level %></li>
+            </ul>
+          </div>
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1606830733744-0ad778449672?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mzl8fGNocmlzdG1hcyUyMHRyZWV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+          <div class="info p-4">
+            <ul>
+              <li><%= lesson.user.username %></li>
+              <li>New words: </li>
+              <li>Word count: </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    <% end %>
+    <div id="container">
+      <div class="product-details">
+        <div class="text-md mb-2 font-bold underline">Lesson Title</div>
+          <ul>
+            <li>Name of Course</li>
+            <li>Difficulty Level</li>
+          </ul>
+        </div>
+      <div class="product-image">
+        <img src="https://images.unsplash.com/photo-1606830733744-0ad778449672?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mzl8fGNocmlzdG1hcyUyMHRyZWV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        <div class="info p-4">
+          <ul>
+            <li>User Name </li>
+            <li>New words: </li>
+            <li>Word count: </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="container">
+      <div class="product-details">
+        <div class="text-md mb-2 font-bold underline">Lesson Title</div>
+          <ul>
+            <li>Name of Course</li>
+            <li>Difficulty Level</li>
+          </ul>
+        </div>
+      <div class="product-image">
+        <img src="https://images.unsplash.com/photo-1606830733744-0ad778449672?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mzl8fGNocmlzdG1hcyUyMHRyZWV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        <div class="info p-4">
+          <ul>
+            <li>User Name </li>
+            <li>New words: </li>
+            <li>Word count: </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="container">
+      <div class="product-details">
+        <div class="text-md mb-2 font-bold underline">Lesson Title</div>
+          <ul>
+            <li>Name of Course</li>
+            <li>Difficulty Level</li>
+          </ul>
+        </div>
+      <div class="product-image">
+        <img src="https://images.unsplash.com/photo-1606830733744-0ad778449672?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mzl8fGNocmlzdG1hcyUyMHRyZWV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        <div class="info p-4">
+          <ul>
+            <li>User Name </li>
+            <li>New words: </li>
+            <li>Word count: </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="container">
+      <div class="product-details">
+        <div class="text-md mb-2 font-bold underline">Lesson Title</div>
+          <ul>
+            <li>Name of Course</li>
+            <li>Difficulty Level</li>
+          </ul>
+        </div>
+      <div class="product-image">
+        <img src="https://images.unsplash.com/photo-1606830733744-0ad778449672?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mzl8fGNocmlzdG1hcyUyMHRyZWV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        <div class="info p-4">
+          <ul>
+            <li>User Name </li>
+            <li>New words: </li>
+            <li>Word count: </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="container">
+      <div class="product-details">
+        <div class="text-md mb-2 font-bold underline">Lesson Title</div>
+          <ul>
+            <li>Name of Course</li>
+            <li>Difficulty Level</li>
+          </ul>
+        </div>
+      <div class="product-image">
+        <img src="https://images.unsplash.com/photo-1606830733744-0ad778449672?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mzl8fGNocmlzdG1hcyUyMHRyZWV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        <div class="info p-4">
+          <ul>
+            <li>User Name </li>
+            <li>New words: </li>
+            <li>Word count: </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="container">
+      <div class="product-details">
+        <div class="text-md mb-2 font-bold underline">Lesson Title</div>
+          <ul>
+            <li>Name of Course</li>
+            <li>Difficulty Level</li>
+          </ul>
+        </div>
+      <div class="product-image">
+        <img src="https://images.unsplash.com/photo-1606830733744-0ad778449672?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mzl8fGNocmlzdG1hcyUyMHRyZWV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        <div class="info p-4">
+          <ul>
+            <li>User Name </li>
+            <li>New words: </li>
+            <li>Word count: </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="container">
+      <div class="product-details">
+        <div class="text-md mb-2 font-bold underline">Lesson Title</div>
+          <ul>
+            <li>Name of Course</li>
+            <li>Difficulty Level</li>
+          </ul>
+        </div>
+      <div class="product-image">
+        <img src="https://images.unsplash.com/photo-1606830733744-0ad778449672?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mzl8fGNocmlzdG1hcyUyMHRyZWV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        <div class="info p-4">
+          <ul>
+            <li>User Name </li>
+            <li>New words: </li>
+            <li>Word count: </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="container">
+      <div class="product-details">
+        <div class="text-md mb-2 font-bold underline">Lesson Title</div>
+          <ul>
+            <li>Name of Course</li>
+            <li>Difficulty Level</li>
+          </ul>
+        </div>
+      <div class="product-image">
+        <img src="https://images.unsplash.com/photo-1606830733744-0ad778449672?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mzl8fGNocmlzdG1hcyUyMHRyZWV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        <div class="info p-4">
+          <ul>
+            <li>User Name </li>
+            <li>New words: </li>
+            <li>Word count: </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
