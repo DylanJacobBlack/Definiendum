@@ -1,6 +1,10 @@
-<%= simple_form_for @lesson do |f| %>
-  <%= f.input :title %>
-  <%= f.input :difficulty_level %>
-  <%= f.input :text %>
-  <%= f.button :submit %>
-<% end %>
+<div class="flex justify-center mt-10">
+  <div class="w-3/4 xl:w-1/2">
+    <%= simple_form_for @lesson do |f| %>
+      <%= f.input :title %>
+      <%= f.input :difficulty_level %>
+      <%= f.input :text %>
+      <%= f.button :submit %>
+    <% end %>
+  </div>
+</div>
