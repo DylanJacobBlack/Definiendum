@@ -1,176 +1,93 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<div class='flex justify-center'>
-  <div class="max-w-screen-xl mx-auto p-8 grid gap-8 grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3">
-    <% Lesson.all.each do |lesson| %>
-      <div id="container">
-        <div class="product-details">
-          <div class="text-md mb-2 font-bold underline"><%= lesson.title %></div>
-            <ul>
-              <li>Name of Course</li>
-              <li><%= lesson.difficulty_level %></li>
-            </ul>
-          </div>
-        <div class="product-image">
-          <img src="https://images.unsplash.com/photo-1606830733744-0ad778449672?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mzl8fGNocmlzdG1hcyUyMHRyZWV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
-          <div class="info p-4">
-            <ul>
-              <li><%= lesson.user.username %></li>
-              <li>New words: </li>
-              <li>Word count: </li>
-            </ul>
-          </div>
-        </div>
+<div class="flex justify-center bg-green-100 p-4">
+  <div class="w-3/4">
+    <div class="max-w-sm w-full lg:max-w-full lg:flex m-5">
+      <div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" style="background-image: url(<%= image_path('card-left') %>)" title="Woman holding a mug">
       </div>
-    <% end %>
-    <div id="container">
-      <div class="product-details">
-        <div class="text-md mb-2 font-bold underline">Lesson Title</div>
-          <ul>
-            <li>Name of Course</li>
-            <li>Difficulty Level</li>
-          </ul>
-        </div>
-      <div class="product-image">
-        <img src="https://images.unsplash.com/photo-1606830733744-0ad778449672?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mzl8fGNocmlzdG1hcyUyMHRyZWV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
-        <div class="info p-4">
-          <ul>
-            <li>User Name </li>
-            <li>New words: </li>
-            <li>Word count: </li>
-          </ul>
+      <div class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+        <div class="mb-8">
+          <div class="text-gray-900 font-bold text-xl mb-2">Can coffee make you a better developer?</div>
+          <p class="text-gray-700 text-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.</p>
         </div>
       </div>
     </div>
-    <div id="container">
-      <div class="product-details">
-        <div class="text-md mb-2 font-bold underline">Lesson Title</div>
-          <ul>
-            <li>Name of Course</li>
-            <li>Difficulty Level</li>
-          </ul>
-        </div>
-      <div class="product-image">
-        <img src="https://images.unsplash.com/photo-1606830733744-0ad778449672?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mzl8fGNocmlzdG1hcyUyMHRyZWV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
-        <div class="info p-4">
-          <ul>
-            <li>User Name </li>
-            <li>New words: </li>
-            <li>Word count: </li>
-          </ul>
+    <div class="max-w-sm w-full lg:max-w-full lg:flex m-5">
+      <div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" style="background-image: url(<%= image_path('card-left') %>)" title="Woman holding a mug">
+      </div>
+      <div class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+        <div class="mb-8">
+          <div class="text-gray-900 font-bold text-xl mb-2">Can coffee make you a better developer?</div>
+          <p class="text-gray-700 text-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.</p>
         </div>
       </div>
     </div>
-    <div id="container">
-      <div class="product-details">
-        <div class="text-md mb-2 font-bold underline">Lesson Title</div>
-          <ul>
-            <li>Name of Course</li>
-            <li>Difficulty Level</li>
-          </ul>
-        </div>
-      <div class="product-image">
-        <img src="https://images.unsplash.com/photo-1606830733744-0ad778449672?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mzl8fGNocmlzdG1hcyUyMHRyZWV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
-        <div class="info p-4">
-          <ul>
-            <li>User Name </li>
-            <li>New words: </li>
-            <li>Word count: </li>
-          </ul>
+    <div class="max-w-sm w-full lg:max-w-full lg:flex m-5">
+      <div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" style="background-image: url(<%= image_path('card-left') %>)" title="Woman holding a mug">
+      </div>
+      <div class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+        <div class="mb-8">
+          <div class="text-gray-900 font-bold text-xl mb-2">Can coffee make you a better developer?</div>
+          <p class="text-gray-700 text-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.</p>
         </div>
       </div>
     </div>
-    <div id="container">
-      <div class="product-details">
-        <div class="text-md mb-2 font-bold underline">Lesson Title</div>
-          <ul>
-            <li>Name of Course</li>
-            <li>Difficulty Level</li>
-          </ul>
-        </div>
-      <div class="product-image">
-        <img src="https://images.unsplash.com/photo-1606830733744-0ad778449672?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mzl8fGNocmlzdG1hcyUyMHRyZWV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
-        <div class="info p-4">
-          <ul>
-            <li>User Name </li>
-            <li>New words: </li>
-            <li>Word count: </li>
-          </ul>
+    <div class="max-w-sm w-full lg:max-w-full lg:flex m-5">
+      <div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" style="background-image: url(<%= image_path('card-left') %>)" title="Woman holding a mug">
+      </div>
+      <div class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+        <div class="mb-8">
+          <div class="text-gray-900 font-bold text-xl mb-2">Can coffee make you a better developer?</div>
+          <p class="text-gray-700 text-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.</p>
         </div>
       </div>
     </div>
-    <div id="container">
-      <div class="product-details">
-        <div class="text-md mb-2 font-bold underline">Lesson Title</div>
-          <ul>
-            <li>Name of Course</li>
-            <li>Difficulty Level</li>
-          </ul>
-        </div>
-      <div class="product-image">
-        <img src="https://images.unsplash.com/photo-1606830733744-0ad778449672?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mzl8fGNocmlzdG1hcyUyMHRyZWV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
-        <div class="info p-4">
-          <ul>
-            <li>User Name </li>
-            <li>New words: </li>
-            <li>Word count: </li>
-          </ul>
+    <div class="max-w-sm w-full lg:max-w-full lg:flex m-5">
+      <div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" style="background-image: url(<%= image_path('card-left') %>)" title="Woman holding a mug">
+      </div>
+      <div class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+        <div class="mb-8">
+          <div class="text-gray-900 font-bold text-xl mb-2">Can coffee make you a better developer?</div>
+          <p class="text-gray-700 text-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.</p>
         </div>
       </div>
     </div>
-    <div id="container">
-      <div class="product-details">
-        <div class="text-md mb-2 font-bold underline">Lesson Title</div>
-          <ul>
-            <li>Name of Course</li>
-            <li>Difficulty Level</li>
-          </ul>
-        </div>
-      <div class="product-image">
-        <img src="https://images.unsplash.com/photo-1606830733744-0ad778449672?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mzl8fGNocmlzdG1hcyUyMHRyZWV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
-        <div class="info p-4">
-          <ul>
-            <li>User Name </li>
-            <li>New words: </li>
-            <li>Word count: </li>
-          </ul>
+    <div class="max-w-sm w-full lg:max-w-full lg:flex m-5">
+      <div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" style="background-image: url(<%= image_path('card-left') %>)" title="Woman holding a mug">
+      </div>
+      <div class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+        <div class="mb-8">
+          <div class="text-gray-900 font-bold text-xl mb-2">Can coffee make you a better developer?</div>
+          <p class="text-gray-700 text-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.</p>
         </div>
       </div>
     </div>
-    <div id="container">
-      <div class="product-details">
-        <div class="text-md mb-2 font-bold underline">Lesson Title</div>
-          <ul>
-            <li>Name of Course</li>
-            <li>Difficulty Level</li>
-          </ul>
-        </div>
-      <div class="product-image">
-        <img src="https://images.unsplash.com/photo-1606830733744-0ad778449672?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mzl8fGNocmlzdG1hcyUyMHRyZWV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
-        <div class="info p-4">
-          <ul>
-            <li>User Name </li>
-            <li>New words: </li>
-            <li>Word count: </li>
-          </ul>
+    <div class="max-w-sm w-full lg:max-w-full lg:flex m-5">
+      <div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" style="background-image: url(<%= image_path('card-left') %>)" title="Woman holding a mug">
+      </div>
+      <div class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+        <div class="mb-8">
+          <div class="text-gray-900 font-bold text-xl mb-2">Can coffee make you a better developer?</div>
+          <p class="text-gray-700 text-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.</p>
         </div>
       </div>
     </div>
-    <div id="container">
-      <div class="product-details">
-        <div class="text-md mb-2 font-bold underline">Lesson Title</div>
-          <ul>
-            <li>Name of Course</li>
-            <li>Difficulty Level</li>
-          </ul>
+    <div class="max-w-sm w-full lg:max-w-full lg:flex m-5">
+      <div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" style="background-image: url(<%= image_path('card-left') %>)" title="Woman holding a mug">
+      </div>
+      <div class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+        <div class="mb-8">
+          <div class="text-gray-900 font-bold text-xl mb-2">Can coffee make you a better developer?</div>
+          <p class="text-gray-700 text-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.</p>
         </div>
-      <div class="product-image">
-        <img src="https://images.unsplash.com/photo-1606830733744-0ad778449672?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mzl8fGNocmlzdG1hcyUyMHRyZWV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
-        <div class="info p-4">
-          <ul>
-            <li>User Name </li>
-            <li>New words: </li>
-            <li>Word count: </li>
-          </ul>
+      </div>
+    </div>
+    <div class="max-w-sm w-full lg:max-w-full lg:flex m-5">
+      <div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" style="background-image: url(<%= image_path('card-left') %>)" title="Woman holding a mug">
+      </div>
+      <div class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+        <div class="mb-8">
+          <div class="text-gray-900 font-bold text-xl mb-2">Can coffee make you a better developer?</div>
+          <p class="text-gray-700 text-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.</p>
         </div>
       </div>
     </div>

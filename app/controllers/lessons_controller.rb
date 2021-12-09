@@ -25,6 +25,29 @@ class LessonsController < ApplicationController
     end
   end
 
+  def show
+    @pages = []
+    @lesson.text.split('.').each { |page| @pages << page }
+  end
+
+  def edit
+  end
+
+  def destroy
+    @lesson.destroy
+    redirect_to lessons_path
+  end
+
+  def update
+    if @lesson.save
+      redirect_to lesson_path(@lesson)
+    else
+      # redirect_to lists_path
+      puts "############### ERROR #{@lesson.errors.full_messages}"
+      render 'new'
+    end
+  end
+
   private
 
   def lesson_params
